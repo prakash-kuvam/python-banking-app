@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Check Balance</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <h1>Check Balance</h1>
+    <form method="post">
+      <label for="account_number">Account Number:</label>
+      <input
+        type="text"
+        id="account_number"
+        name="account_number"
+        required
+      /><br />
+      <input type="submit" value="Check Balance" />
+    </form>
+    <a href="{{ url_for('index') }}">Back to Home</a>
+  </body>
+</html>
