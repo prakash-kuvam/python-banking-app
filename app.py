@@ -76,5 +76,8 @@ def check_balance():
         return "Account not found."
     return render_template('check_balance.html')
 
+# if __name__ == "__main__":
+#     app.run(debug=True)
+
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, port=5000, host='0.0.0.0')
